@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #bgimg {
+            background-image: url(bugatti_Devo.jpg);
+            background-size: cover;
+
+
+        }
+    </style>
+</head>
+
+<body class="">
+    <div id="maindiv" class="">
+        <div id="navdiv" class="w-80 hidden xl:flex xl:flex-col fixed h-screen ">
+            <div class="border-solid w-full flex flex-col items-center py-3 bg-black h-screen px-5 ">
+                <div>
+                    <div class="w-28 h-28 rounded-full bg-slate-800 flex justify-center items-center">
+                        <img src="bugatti_Devo.jpg" alt="" class="w-24 h-24 rounded-full cursor-pointer">
+                    </div>
+                    <h1 class="text-white font-semibold text-2xl my-3 cursor-pointer">Amir Javed</h1>
+                </div>
+                <div id="navicon">
+                    <ul class="flex gap-3 mt-3">
+                        <li
+                            class="w-10 h-10 bg-gray-800 rounded-full flex justify-center items-center hover:bg-blue-400">
+                            <a href="https://www.facebook.com/profile.php?id=100091109365984" target="_blank"><i
+                                    class="fa-brands fa-facebook invert text-xl"></i></a></li>
+                        <li
+                            class="w-10 h-10 bg-gray-800 rounded-full flex justify-center items-center hover:bg-blue-400">
+                            <a href="#"><i class="fa-brands fa-instagram invert text-xl"></i></a></li>
+                        <li
+                            class="w-10 h-10 bg-gray-800 rounded-full flex justify-center items-center hover:bg-blue-400">
+                            <a href="#"><i class="fa-brands fa-whatsapp invert text-xl"></i></a></li>
+                        <li
+                            class="w-10 h-10 bg-gray-800 rounded-full flex justify-center items-center hover:bg-blue-400">
+                            <a href="#"><i class="fa-brands fa-linkedin invert text-xl"></i></a></li>
+                        <li
+                            class="w-10 h-10 bg-gray-800 rounded-full flex justify-center items-center hover:bg-blue-400">
+                            <a href="aqabjavedmalik2202@gmail.com"><img src="gmail.png" alt="" class="w-6"></a></li>
+                    </ul>
+                </div>
+                <div id="navside" class="w-full">
+                    <ul class="mx-5 mt-10 space-y-8">
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-house-chimney text-xl "></i><span
+                                class="text-xl hover:text-white">Home</span></li>
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-user text-xl "></i><span
+                                class="text-xl hover:text-white">about</span></li>
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-file-lines text-xl "></i><span
+                                class="text-xl hover:text-white">Resume</span></li>
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-image text-xl "></i><span
+                                class="text-xl hover:text-white">Portfolio</span></li>
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-server text-xl "></i><span
+                                class="text-xl hover:text-white">Services</span></li>
+                        <li class="cursor-pointer text-gray-300  relative">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-3 hover:text-blue-500 ">
+                                    <i class="fa-solid fa-pager text-xl "></i>
+                                    <span class="text-xl hover:text-white">Dropdown</span>
+                                </div>
+                                <div>
+                                    <i id="dropdownicon"
+                                        class="fa-solid fa-circle-chevron-down text-3xl hover:text-blue-500 "></i>
+                                </div>
+                            </div>
+                            <div id="dropdowninfo" class="hidden">
+                                <ul
+                                    class="border-solid border-gray-400 border-[1px] w-full space-y-8 px-6 py-5 text-lg mt-4">
+                                    <li class="hover:text-gray-400">Dropdown1</li>
+                                    <li class="hover:text-gray-400">Dropdown2</li>
+                                    <li class="hover:text-gray-400">Dropdown3</li>
+                                    <li class="hover:text-gray-400">Dropdown4</li>
+                                    <li class="hover:text-gray-400">Dropdown5</li>
+                                    <li class="hover:text-gray-400">Dropdown6</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cursor-pointer text-gray-300 space-x-3 hover:text-blue-500"><i
+                                class="fa-solid fa-envelope text-xl "></i><span
+                                class="text-xl hover:text-white">Contact</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="maininfo" class="xl:ml-80">
+            <div id="hamburger"
+                class="fixed right-5 top-3 text-2xl xl:hidden w-12 h-12 rounded-full bg-[#149DDD] flex justify-center items-center">
+                <i id="ham" class="fa-solid fa-bars text-white "></i>
+                <i id="X" class="fa-solid fa-xmark hidden text-white"></i>
+            </div>
+            <div id="info">
+                <div id="head" class="w-full h-screen">
+
+                    <div id="bgimg" class="w-full h-screen">
+                        <div class=" text-white justify-center h-full flex flex-col ml-2 sm:ml-20  text-2xl sm:text-3xl lg:ml-8 cursor-pointer text-white">
+                            <h1 class="font-bold  text-3xl sm:text-5xl">Amir Javed</h1>
+                            <h2>I am Developer</h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="main" class="my-16">
+                    <div class="mx-3 sm:mx-16  md:mx-32 lg:mx-3 xl:mx-8">
+                        <div class="text-3xl font-bold">About</div><div class="w-12 h-[3px] rounded-full bg-[#149DDD] mt-5 mb-4"></div>
+                        <p class="text-lg text-gray-800 mb-16 ">Magnam dolores commodi suscipit. Necessitatibus eius
+                            consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam
+                            cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                            quidem hic quas.</p>
+                        <div class="lg:flex ml-3">
+                            <div class=""><img src="bugatti_Devo.jpg" alt="" class="md:w-[600px] lg:h-96 lg:w-[1200px] rounded-lg"></div>
+                            <div class="ml-6">
+                                <h1 class="text-2xl font-semibold mb-5">UI/UX Designer & Web Developer.</h1>
+                                <p class="italic text-gray-900 mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <ul class="ml-2 lg:ml-3 lg:grid lg:grid-cols-2 md:space-y-4 space-y-2">
+                                    <li class="flex items-center mt-4"><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Birthday: </span><span
+                                            class="text-sm text-gray-700">31 Dec 2004</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Age: </span><span
+                                            class="text-sm text-gray-700">20</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Website: </span><span
+                                            class="text-sm text-gray-700">www.############.com</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Degree: </span><span
+                                            class="text-sm text-gray-700">FSc ICS</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Phone: </span><span
+                                            class="text-sm text-gray-700">+92 3118818136</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">City: </span><span
+                                            class="text-sm text-gray-700">Muzaffarabad, Kashmir</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Email: </span><span
+                                            class="text-sm text-gray-700">aqabjavedmalik2002@gmail.com</span></li>
+                                    <li class="flex items-center "><i
+                                            class="fa-solid fa-greater-than text-[#149DDD] mr-3"></i><span
+                                            class="text-lg font-semibold mr-5">Freelancing: </span><span
+                                            class="text-xl text-gray-700">Available</span></li>
+                                </ul>
+                                <p class="text-md my-8">Officiis eligendi itaque labore et dolorum mollitia officiis
+                                    optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt
+                                    officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed
+                                    et consectetur qui quia repellendus itaque neque.</p>
+                            </div>
+                        </div>
+                        <div class="my-40">
+                            <ul class="mx-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+                                <li>
+                                    <i class="fa-regular fa-face-smile text-5xl text-[#149DDD] float-left mr-5"></i>
+                                    <div class="flex flex-col ">
+                                        <span class="text-5xl font-semibold">232</span>
+                                        <div class="mt-3 text-gray-500">
+                                            <span class="font-semibold ">Happy Clients</span>
+                                            <span>consequuntur quae</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code text-5xl text-[#149DDD] float-left mr-5"></i>
+                                    <div class="flex flex-col ">
+                                        <span class="text-5xl font-semibold">521</span>
+                                        <div class="mt-3 text-gray-500">
+                                            <span class="font-semibold ">Projects </span>
+                                            <span>adipisci atque cum quia aut</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-headset text-5xl text-[#149DDD] float-left mr-5"></i>
+                                    <div class="flex flex-col ">
+                                        <span class="text-5xl font-semibold">1453</span>
+                                        <div class="mt-3 text-gray-500">
+                                            <span class="font-semibold ">Hours Of Support</span>
+                                            <span> aut commodi quaerat</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-users text-5xl text-[#149DDD] float-left mr-5"></i>
+                                    <div class="flex flex-col ">
+                                        <span class="text-5xl font-semibold">32</span>
+                                        <div class="mt-3 text-gray-500">
+                                            <spa class="font-semibold " n>Hard Workers</span>
+                                                <span>rerum asperiores dolor</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 px-3 sm:px-16  md:px-32 lg:px-3 py-16 mb-28 xl:px-8">
+                        <div class="text-3xl font-bold">Skills</div>
+                        <div class="w-12 h-[3px] rounded-full bg-[#149DDD] mt-5 mb-4"></div>
+                        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                        <ul class="space-y-7 mt-16 grid lg:grid-cols-2 md:space-x-5 lg:gap-x-8">
+                            <li class="md:mt-7 md:ml-5">
+                                <div class="flex justify-between font-semibold">
+                                    <div>HTML</div>
+                                    <div>95%</div>
+                                </div>
+                                <div class="w-full h-3 bg-gray-200">
+                                    <div class="w-[95%] h-full bg-[#149DDD]"></div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="flex justify-between font-semibold">
+                                    <div>CSS</div>
+                                    <div>85%</div>
+                                </div>
+                                <div class="w-full h-3 bg-gray-200">
+                                    <div class="w-[85%] h-full bg-[#149DDD]"></div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="flex justify-between font-semibold">
+                                    <div>TailwindCSS</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="w-full h-3 bg-gray-200">
+                                    <div class="w-[90%] h-full bg-[#149DDD]"></div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="flex justify-between font-semibold">
+                                    <div>JavaScript</div>
+                                    <div>50%</div>
+                                </div>
+                                <div class="w-full h-3 bg-gray-200">
+                                    <div class="w-[50%] h-full bg-[#149DDD]"></div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="flex justify-between font-semibold">
+                                    <div>MicroSoft Office</div>
+                                    <div>60%</div>
+                                </div>
+                                <div class="w-full h-3 bg-gray-200">
+                                    <div class="w-[60%] h-full bg-[#149DDD]"></div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mx-3 sm:mx-16  md:mx-32 lg:mx-3 xl:mx-8">
+                        <div class="text-3xl font-bold">Resume</div>
+                        <div class="w-12 h-[3px] rounded-full bg-[#149DDD] mt-5 mb-4"></div>
+                        <p>My name is Amir Javed. I excel in collaborating with others to achieve objectives on time with excellence and success. I am proficient in Microsoft Word, Excel, PowerPoint, and other MS Office applications. Additionally, I have experience with programming languages for beginners such as C, C++, and Java. I am also a beginner in web development, with knowledge of HTML, CSS, and JavaScript</p>
+                    </div>
+                    <div class="mx-3 sm:mx-16  md:mx-32 lg:mx-3 mt-20 lg:grid lg:grid-cols-2 xl:mx-8">
+                        <div>
+                            <div class="">
+                                <span class="text-3xl font-bold">Summary</span>
+                                <div class=" mt-6 flex">
+                                    <img src="listick.png" alt="" class="mr-4 min-[540px]:h-56 min-[1006px]:h-48 lg:h-60">
+                                    <div class="text-gray-800">
+                                        <h1 class="text-2xl font-semibold">Amir javed</h1>
+                                        <p class=" my-2 italic">Seeking opportunities to further develop my skills in collaboration, MS Office applications, programming languages, and web development to contribute effectively to a dynamic team and organization.</p>
+                                        <ul class="space-y-3 list-disc ml-5">
+                                            <li>Muzaffarabad, Azad Kashmir</li>
+                                            <li>+92 3118818136 </li>
+                                            <li>aqabjavedmalik2002<span class="block text-right min-[308px]:inline">@gmail.com</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="text-3xl font-bold">Education</span>
+                                <div class=" mt-6 flex">
+                                    <img src="listickL.png" alt="" class="mr-4 min-[861px]:h-[365px] min-[733px]:h-[360px] md:h-[400px] lg:h-[420px] min-[1186px]:h-[310px] xl:h-[370px] min-[1506px]:h-[360px]">
+                                    <div>
+                                        <div class="text-gray-800 mb-7">
+                                            <h1 class="text-2xl font-semibold">Matriculation (Computer Science)</h1>
+                                            <h2 class="text-lg font-bold italic ml-5 my-2">2020 - 2022</h2>
+                                            <p class="italic mx-2 mb-4">Post Gradute College Muzaffarabad, Azad Kashmir</p>
+                                            <p>Who takes pleasure in coming. And who arranges work on time but wants only fairness. Truly, he who shares the fullness with dignity nerada porti sand markend</p>
+                                        </div>
+                                        <div class="text-gray-800">
+                                            <h1 class="text-2xl font-semibold">FSc ICS(Computer Science)</h1>
+                                            <h2 class="text-lg font-bold italic ml-5 my-2">2022 - 2024</h2>
+                                            <p class="italic mx-2 mb-4">Post Gradute College Muzaffarabad, Azad Kashmir</p>
+                                            <p>Who takes pleasure in coming. And who arranges work on time but wants only fairness. Truly, he who shares the fullness with dignity nerada porti sand markend</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="">
+                                <span class="text-3xl font-bold">Professional Experience</span>
+                                <div class="mt-6 flex">
+                                    <img src="listickL.png" alt="" class="mr-8 min-[540px]:h-[730px] min-[900px]:h-[690px] min-[927px]:h-[660px] lg:h-[730px] xl:h-[780px] min-[1329px]:h-[730px] min-[1474px]:h-[710px]">
+                                    <div >
+                                        <div class="text-gray-800 mb-7">
+                                            <h1 class="text-2xl font-semibold">Senior graphic design specialist</h1>
+                                            <h2 class="ml-4 font-semibold italic my-3">2023 - Present</h2>
+                                            <p class=" my-2 italic font-semibold">Experion, New York, NY</p>
+                                            <ul class="list-disc space-y-3 mt-4">
+                                                <li><p>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</p></li>
+                                                <li><p>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</p></li>
+                                                <li><p>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</p></li>
+                                                <li><p>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="text-gray-800">
+                                            <h1 class="text-2xl font-semibold">Graphic design specialist</h1>
+                                            <h2 class="ml-4 font-semibold italic my-3">2018 - 2022</h2>
+                                            <p class=" my-2 italic font-semibold">Stepping Stone Advertising, New York, NY</p>
+                                            <ul class="list-disc space-y-3 mt-4">
+                                                <li><p>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</p></li>
+                                                <li><p>Managed up to 5 projects or tasks at a given time while under pressure</p></li>
+                                                <li><p>Recommended and consulted with clients on the most appropriate graphic design</p></li>
+                                                <li><p>Created 4+ design presentations and proposals a month for clients and account managers</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 sm:mx-16  md:mx-32 lg:mx-3 mt-20">
+                        <div class="text-3xl font-bold">Contact</div><div class="w-12 h-[3px] rounded-full bg-[#149DDD] mt-5 mb-4"></div>
+                        <p class="mb-10">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                        <div class="lg:grid lg:grid-cols-2 lg:gap-5 space-y-5">
+                            <div class="shadow-[0px_8px_20px_-5px_rgba(0,0,0,0.5)] bg-white px-5 py-5 space-y-12 mt-5">
+                                <div class="flex">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot text-2xl float-left w-12 h-12 rounded-full justify-center items-center bg-blue-100 hover:bg-blue-300 hover:text-white flex"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <span class="text-xl font-semibold">Address</span>
+                                        <p class="">A108 Adam Street, New York, NY 535022</p>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div>
+                                        <i class="fa-solid fa-phone text-2xl float-left w-12 h-12 rounded-full justify-center items-center bg-blue-100 hover:bg-blue-300 hover:text-white flex"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <span class="text-xl font-semibold">Call Us</span>
+                                        <p class="">+1 5589 55488 55</p>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div>
+                                        <i class="fa-regular fa-envelope text-2xl float-left w-12 h-12 rounded-full justify-center items-center bg-blue-100 hover:bg-blue-300 hover:text-white flex"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <span class="text-xl font-semibold">Email Us</span>
+                                        <p>aqabjavedmalik2002<span class="min-[345px]:hidden">........</span><span class="hidden min-[345px]:inline
+                                            ">@gmail.com</span></p>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1962.1742792566224!2d73.47597599736592!3d34.35354612609871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e09e0f9122ac99%3A0x8285ff45b0fa3db5!2sMuzaffarabad%20Cricket%20Stadium%2C%20AJK%2C%20Pakistan!5e1!3m2!1sen!2s!4v1737455947597!5m2!1sen!2s" class="w-full h-72" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="shadow-[0px_8px_20px_-5px_rgba(0,0,0,0.5)] bg-white px-5 py-5 space-y-12">
+                                <div class="md:grid md:grid-cols-2 md:gap-5">
+                                    <div class=" text-gray-800">
+                                        <div>Your Name</div>
+                                        <input type="text" class="w-full py-2 px-2 mt-2 border-solid border-gray-300 border-[1px] focus:outline-none focus:ring-1 focus:ring-[#149DDD]">
+                                    </div>
+                                    <div class=" text-gray-800">
+                                        <div>Your Email</div>
+                                        <input type="email" class="w-full py-2 px-2 mt-2 border-solid border-gray-300 border-[1px] focus:outline-none focus:ring-1 focus:ring-[#149DDD]">
+                                    </div>
+                                </div>
+                                <div class=" text-gray-800">
+                                    <div>Subject</div>
+                                    <input type="text" class="w-full py-2 px-2 mt-2 border-solid border-gray-300 border-[1px] focus:outline-none focus:ring-1 focus:ring-[#149DDD]">
+                                </div>
+                                <div>
+                                    <div class=" text-gray-800">Message</div>
+                                    <textarea name="" id="" class="w-full h-56 py-2 mt-2 px-2 border-solid border-gray-300 border-[1px] focus:outline-none focus:ring-1 focus:ring-[#149DDD]"></textarea>
+                                </div>
+                                <div class=" text-center">
+                                    <button type="button" class="bg-[#149DDD] px-8 py-3 rounded-full">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" text-center py-10 bg-[#F4FAFD] text-gray-700">
+            
+            <div><i class="fa-regular fa-copyright px-1 hover:cursor-pointer"></i>Copyright <span class="font-bold hover:cursor-pointer">iPortfolio</span> All Rights Reserved</div>
+            <div>Designed by <span class="text-[#149DDD] hover:cursor-pointer"> BootstrapMad </span>  Distributed by <span class="text-[#149DDD] hover:cursor-pointer"> ThemeWago </span> </div>
+        </footer>
+    </div>
+     
+
+        <script>
+            const dropicon = document.getElementById("dropdownicon");
+            const dropinfo = document.getElementById("dropdowninfo");
+
+
+
+            dropicon.addEventListener("click", () => {
+                dropinfo.style.display = dropinfo.style.display === "block" ? "none" : "block";
+            })
+
+            const hamburger = document.getElementById("hamburger");
+            const navleft = document.getElementById("navdiv");
+            let ham = document.getElementById("ham");
+            let x = document.getElementById("X");
+
+            hamburger.addEventListener("click", () => {
+                navleft.style.display = navleft.style.display === "block" ? "none" : "block";
+                if (ham.style.display !== "none") {
+                    ham.style.display = "none";
+                    x.style.display = "block";
+                }
+                else {
+                    ham.style.display = "block";
+                    x.style.display = "none";
+                }
+            })
+            
+        </script>
+</body>
+
+</html>
